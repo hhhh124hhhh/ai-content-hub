@@ -1,5 +1,5 @@
--- Supabase SQL Schema for AI Prompt Marketplace (Fixed - Correct Insert Order)
--- AI Prompt Marketplace Database Schema - Fixed Version
+-- Supabase SQL Schema for AI Prompt Marketplace (Fixed - No Special Characters)
+-- AI Prompt Marketplace Database Schema - Fixed Version (No Special Characters in Strings)
 
 -- Enable UUID extension
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
@@ -203,8 +203,7 @@ CREATE TABLE packages (
     length(description) >= 10 AND length(description) <= 1000 AND
     length(category) >= 1 AND length(category) <= 100 AND
     price_single >= 0 AND price_monthly >= 0 AND price_yearly >= 0 AND
-    original_price_single >= 0 AND original_price_monthly >= 0 AND original_price_yearly >= 0 AND
-    discount_percentage >= 0 AND discount_percentage <= 100
+    original_price_single >= 0 AND original_price_monthly >= 0 AND original_price_yearly >= 0
   )
 );
 
@@ -417,15 +416,32 @@ END;
 $$;
 
 -- ============================================================
--- SEED DATA (Correct Order)
+-- SEED DATA (No Special Characters in Strings)
 -- ============================================================
 
--- Step 1: Seed Users (First)
+-- Seed Users (Admin User)
 INSERT INTO users (email, name, provider, provider_id, subscription_tier, subscription_status, created_at, updated_at)
 VALUES
   ('admin@ai-prompt-marketplace.com', 'Admin', 'email', 'admin-user-123', 'premium', 'active', NOW(), NOW());
 
--- Step 2: Seed Prompts (Second - Before Evaluations)
+-- Seed Categories
+INSERT INTO categories (name, slug, description, icon, color, prompt_count, created_at, updated_at)
+VALUES
+  ('Writing Assistant', 'writing-assistant', 'High-quality writing prompts for ChatGPT and other AI models', 'Pencil', '#3b82f6', 254, NOW(), NOW()),
+  ('Coding Assistant', 'coding-assistant', 'Expert coding prompts and algorithm explanations', 'Computer', '#8b5cf6', 186, NOW(), NOW()),
+  ('Marketing Assistant', 'marketing-assistant', 'Marketing and copywriting prompts for businesses', 'Megaphone', '#ef4444', 142, NOW(), NOW()),
+  ('Design Assistant', 'design-assistant', 'UI/UX and graphic design prompts', 'Palette', '#f97316', 128, NOW(), NOW()),
+  ('Analysis Assistant', 'analysis-assistant', 'Data analysis and visualization prompts', 'Bar Chart', '#10b981', 98, NOW(), NOW()),
+  ('Other', 'other', 'Miscellaneous AI prompts for various use cases', 'Rocket', '#64748b', 67, NOW(), NOW());
+
+-- Seed Packages
+INSERT INTO packages (name, slug, description, category, tier, price_single, price_monthly, price_yearly, original_price_single, original_price_monthly, original_price_yearly, prompt_ids, active, created_at, updated_at)
+VALUES
+  ('Starter Pack', 'starter-pack', 'Perfect for beginners getting started with AI prompts', 'Other', 'basic', 4.99, 4.99, 49.99, 9.99, 9.99, 99.99, ARRAY[]::BIGINT[], true, NOW(), NOW()),
+  ('Pro Pack', 'pro-pack', 'All the pro prompts you need for professional work', 'Other', 'pro', 14.99, 19.99, 199.99, 29.99, 39.99, 399.99, ARRAY[]::BIGINT[], true, NOW(), NOW()),
+  ('Premium Pack', 'premium-pack', 'Premium prompts with guaranteed quality', 'Other', 'premium', 49.99, 69.99, 699.99, 99.99, 139.99, 1399.99, ARRAY[]::BIGINT[], true, NOW(), NOW());
+
+-- Seed Prompts (High-quality Chinese prompts)
 INSERT INTO prompts (
   created_at, updated_at,
   title, description, content,
@@ -442,26 +458,26 @@ INSERT INTO prompts (
 ) VALUES
   -- Prompt 1
   (NOW(), NOW(),
-  'ChatGPT写作提示词 - 高质量',
-  '这是一个优秀的ChatGPT写作提示词，包含完整的步骤和示例。',
-  '你是一个专业的写作助手。请帮助我完成以下任务：
+  'ChatGPT Writing Prompt - High Quality',
+  'This is an excellent ChatGPT writing prompt with complete steps and examples.',
+  'You are a professional writing assistant. Please help me complete the following tasks:
 
-步骤：
-1. 确定写作主题
-2. 撰写文章大纲
-3. 根据大纲撰写正文
-4. 编辑和优化内容
-5. 添加图片和引用
+Tasks:
+1. Determine the writing topic
+2. Write the article outline
+3. Write the article body
+4. Edit and optimize content
+5. Add images and references
 
-要求：
-- 文章长度：1500-2000字
-- 语调：专业、易懂
-- 风格：引人入胜
+Requirements:
+- Article length: 1500-2000 words
+- Tone: professional and accessible
+- Format: engaging and clear
 
-请开始执行。',
-  'writing', 'Writing Assistant', '["writing", "ChatGPT", "AI写作", "文章", "大纲", "内容"]', '["ChatGPT", "Claude"]', 'intermediate',
-  '["写博客文章", "撰写大纲", "撰写正文", "编辑优化", "添加图片"]',
-  'promptMaster', 'https://avatar.url', 50000, true, true, '["AI", "写作", "技术"]',
+Please start executing.',
+  'writing', 'Writing Assistant', ARRAY['writing', 'ChatGPT', 'AI writing', 'article', 'outline']::JSONB, ARRAY['ChatGPT', 'Claude']::JSONB, 'intermediate',
+  ARRAY['Write blog articles', 'Write outlines', 'Write article body', 'Edit and optimize content', 'Add images']::JSONB,
+  'promptMaster', null, 50000, true, true, ARRAY['AI', 'Writing', 'Technology']::JSONB,
   '2026-01-28 00:00:00', NOW(),
   500, 100, 50, 10, 20,
   28, 23, 18, 23, 5,
@@ -469,355 +485,512 @@ INSERT INTO prompts (
   'basic', 92, 95,
   'basic',
   88, 95, 94, 92, 95,
-  92, 92, 92, 92,
+  92, 92, 92,
   92, 87,
   'basic',
   92, 87,
-  0, 0, null
+  0, null
   ),
-  
   -- Prompt 2
   (NOW(), NOW(),
-  'ChatGPT编程提示词 - 实用',
-  '这是一个实用的ChatGPT编程提示词，帮助开发者提高效率。',
-  '你是一个专业的编程助手。请帮助我完成以下任务：
+  'ChatGPT Coding Prompt - Practical',
+  'This is a practical ChatGPT coding prompt to help developers improve productivity.',
+  'You are a professional coding assistant. Please help me complete the following tasks:
 
-任务：
-1. 编写一个函数
-2. 添加错误处理
-3. 添加单元测试
-4. 优化性能
+Tasks:
+1. Write a function
+2. Add error handling
+3. Write unit tests
+4. Optimize performance
 
-要求：
-- 语言：TypeScript
-- 代码风格：整洁、可维护
-- 注释：详细、清晰
+Requirements:
+- Language: TypeScript
+- Code style: clean and maintainable
+- Comments: detailed and clear
 
-请开始执行。',
-  'coding', 'Coding Assistant', '["编程", "ChatGPT", "代码", "TypeScript", "函数", "测试"]', '["ChatGPT", "Claude"]', 'beginner',
-  '["编写函数", "添加错误处理", "编写单元测试", "优化性能"]',
-  'devGuru', 'https://avatar.url', 25000, false, true, '["编程", "技术", "代码"]',
+Please start executing.',
+  'coding', 'Coding Assistant', ARRAY['coding', 'ChatGPT', 'code', 'TypeScript', 'function', 'tests']::JSONB, ARRAY['ChatGPT', 'Claude']::JSONB, 'beginner',
+  ARRAY['Write functions', 'Add error handling', 'Write unit tests', 'Optimize performance']::JSONB,
+  'devGuru', null, 25000, false, true, ARRAY['coding', 'Technology', 'code']::JSONB,
   '2026-01-27 00:00:00', NOW(),
   250, 50, 30, 10, 5,
   27, 21, 17, 23, 4,
   'basic', 11,
   'basic', 90,
-  'basic', 88, 90, 88, 88,
+  'basic',
+  88, 90, 88, 88,
   88, 88,
   'basic',
   88, 88,
-  0, 0, null
+  0, null
   ),
-  
   -- Prompt 3
   (NOW(), NOW(),
-  'ChatGPT营销提示词 - 创意',
-  '这是一个有创意的ChatGPT营销提示词，帮助营销人员创建吸引人的内容。',
-  '你是一个专业的营销助手。请帮助我完成以下任务：
+  'ChatGPT Marketing Prompt - Creative',
+  'This is a creative ChatGPT marketing prompt to help marketers create engaging content.',
+  'You are a professional marketing assistant. Please help me complete the following tasks:
 
-任务：
-1. 撰写产品介绍
-2. 创建广告文案
-3. 设计营销活动
-4. 撰写社交媒体内容
+Tasks:
+1. Write product introduction
+2. Create ad copy
+3. Design marketing campaign
+4. Write social media content
 
-要求：
-- 语调：吸引人、专业
-- 风格：创意、创新
-- 平台：LinkedIn, Twitter, Facebook
+Requirements:
+- Tone: engaging and professional
+- Format: creative and innovative
+- Platforms: LinkedIn, Twitter, Facebook
 
-请开始执行。',
-  'marketing', 'Marketing Assistant', '["营销", "ChatGPT", "广告", "社交媒体", "创意", "内容"]', '["ChatGPT", "Claude"]', 'advanced',
-  '["撰写产品介绍", "创建广告文案", "设计营销活动", "撰写社交媒体内容"]',
-  'marketingGenius', 'https://avatar.url', 10000, true, false, '["营销", "广告", "社交媒体"]',
+Please start executing.',
+  'marketing', 'Marketing Assistant', ARRAY['marketing', 'ChatGPT', 'ads', 'social media', 'creative', 'content']::JSONB, ARRAY['ChatGPT', 'Claude']::JSONB, 'advanced',
+  ARRAY['Write product intro', 'Create ad copy', 'Design marketing campaign', 'Write social media content']::JSONB,
+  'marketingGenius', null, 10000, true, false, ARRAY['marketing', 'ads', 'social media']::JSONB,
   '2026-01-26 00:00:00', NOW(),
   100, 40, 20, 10, 5,
   24, 19, 17, 22, 3,
   'basic', 13,
   'basic', 82,
-  'basic', 80, 82, 80, 80,
+  'basic',
+  80, 82, 80, 80,
   80, 80,
   'basic',
   80, 80,
-  0, 0, null
+  0, null
   ),
-  
   -- Prompt 4
   (NOW(), NOW(),
-  'ChatGPT设计提示词 - 优雅',
-  '这是一个优雅的ChatGPT设计提示词，帮助设计师创建精美的作品。',
-  '你是一个专业的设计助手。请帮助我完成以下任务：
+  'ChatGPT Design Prompt - Elegant',
+  'This is an elegant ChatGPT design prompt to help designers create beautiful works.',
+  'You are a professional design assistant. Please help me complete the following tasks:
 
-任务：
-1. 设计UI布局
-2. 选择颜色方案
-3. 创建设计系统
-4. 添加视觉效果
+Tasks:
+1. Design UI layout
+2. Select color scheme
+3. Create design system
+4. Add visual effects
 
-要求：
-- 风格：现代、优雅
-- 配色：协调、专业
-- 组件：可复用、模块化
+Requirements:
+- Style: modern and elegant
+- Colors: coordinated and professional
+- Components: reusable and modular
 
-请开始执行。',
-  'design', 'Design Assistant', '["设计", "ChatGPT", "UI", "UX", "布局", "颜色"]', '["ChatGPT", "Claude", "Midjourney"]', 'intermediate',
-  '["设计UI布局", "选择颜色方案", "创建设计系统", "添加视觉效果"]',
-  'designMaster', 'https://avatar.url', 20000, true, false, '["设计", "UI", "UX"]',
+Please start executing.',
+  'design', 'Design Assistant', ARRAY['design', 'ChatGPT', 'UI', 'UX', 'layout', 'colors']::JSONB, ARRAY['ChatGPT', 'Claude', 'Midjourney']::JSONB, 'intermediate',
+  ARRAY['Design UI layout', 'Select color scheme', 'Create design system', 'Add visual effects']::JSONB,
+  'designMaster', null, 20000, true, false, ARRAY['design', 'UI', 'UX']::JSONB,
   '2026-01-25 00:00:00', NOW(),
   200, 30, 15, 10, 5,
   22, 20, 16, 21, 4,
   'basic', 14,
   'basic', 78,
-  'basic', 78, 78, 78, 78,
+  'basic',
+  78, 78, 78,
   78, 78,
   'basic',
   78, 78,
-  0, 0, null
+  0, null
   ),
-  
   -- Prompt 5
   (NOW(), NOW(),
-  'ChatGPT分析提示词 - 专业',
-  '这是一个专业的ChatGPT分析提示词，帮助分析师处理复杂的数据。',
-  '你是一个专业的分析助手。请帮助我完成以下任务：
+  'ChatGPT Analysis Prompt - Professional',
+  'This is a professional ChatGPT analysis prompt to help analysts process complex data.',
+  'You are a professional analysis assistant. Please help me complete the following tasks:
 
-任务：
-1. 数据清洗
-2. 统计分析
-3. 可视化设计
-4. 报告撰写
+Tasks:
+1. Data cleaning
+2. Statistical analysis
+3. Visualization design
+4. Report writing
 
-要求：
-- 方法：科学、严谨
-- 工具：Python, Pandas, Matplotlib
-- 输出：图表、报告
+Requirements:
+- Methods: scientific and rigorous
+- Tools: Python, Pandas, Matplotlib
+- Output: charts and reports
 
-请开始执行。',
-  'analysis', 'Analysis Assistant', '["分析", "ChatGPT", "数据", "统计", "可视化", "报告"]', '["ChatGPT", "Claude"]', 'advanced',
-  '["数据清洗", "统计分析", "可视化设计", "报告撰写"]',
-  'dataAnalyst', 'https://avatar.url', 30000, true, false, '["数据", "统计", "分析"]',
+Please start executing.',
+  'analysis', 'Analysis Assistant', ARRAY['analysis', 'ChatGPT', 'data', 'statistics', 'visualization', 'reports']::JSONB, ARRAY['ChatGPT', 'Claude']::JSONB, 'advanced',
+  ARRAY['Data cleaning', 'Statistical analysis', 'Visualization design', 'Report writing']::JSONB,
+  'dataAnalyst', null, 30000, true, false, ARRAY['data', 'statistics', 'analysis']::JSONB,
   '2026-01-24 00:00:00', NOW(),
   300, 60, 12, 12, 5,
   25, 21, 18, 22, 4,
   'basic', 15,
   'basic', 80,
-  'basic', 80, 80, 80, 80,
+  'basic',
+  80, 80, 80,
   80, 80,
   'basic',
   80, 80,
-  0, 0, null
+  0, null
   ),
-  
   -- Prompt 6
   (NOW(), NOW(),
-  'ChatGPT综合提示词 - 全面',
-  '这是一个全面的ChatGPT综合提示词，帮助用户完成各种任务。',
-  '你是一个全面的ChatGPT助手。请帮助我完成以下任务：
+  'ChatGPT Comprehensive Prompt - Complete',
+  'This is a comprehensive ChatGPT prompt to help users complete various tasks.',
+  'You are a comprehensive ChatGPT assistant. Please help me complete the following tasks:
 
-任务：
-1. 回答问题
-2. 提供建议
-3. 创建计划
-4. 执行任务
+Tasks:
+1. Answer questions
+2. Provide suggestions
+3. Create plans
+4. Execute tasks
 
-要求：
-- 能力：全面、专业
-- 风格：适应性强、灵活
-- 质量：高质量、准确
+Requirements:
+- Capability: comprehensive and professional
+- Format: adaptable and flexible
+- Quality: high quality and accurate
 
-请开始执行。',
-  'other', 'Other', '["综合", "ChatGPT", "多任务", "通用", "高效"]', '["ChatGPT", "Claude"]', 'beginner',
-  '["回答问题", "提供建议", "创建计划", "执行任务"]',
-  'aiAssistant', 'https://avatar.url', 15000, false, false, '["AI", "通用"]',
+Please start executing.',
+  'other', 'Other', ARRAY['comprehensive', 'ChatGPT', 'multi-task', 'general', 'efficient']::JSONB, ARRAY['ChatGPT', 'Claude']::JSONB, 'beginner',
+  ARRAY['Answer questions', 'Provide suggestions', 'Create plans', 'Execute tasks']::JSONB,
+  'aiAssistant', null, 15000, false, false, ARRAY['AI', 'general']::JSONB,
   '2026-01-23 00:00:00', NOW(),
   150, 40, 8, 12, 5,
   23, 17, 15, 21, 4,
   'basic', 12,
   'basic', 75,
-  'basic', 75, 75, 75, 75,
+  'basic',
+  75, 75, 75,
   75, 75,
   'basic',
   75, 75,
-  0, 0, null
+  0, null
   ),
-  
   -- Prompt 7
   (NOW(), NOW(),
-  'ChatGPT写作提示词 - 快速',
-  '这是一个快速的ChatGPT写作提示词，帮助用户快速生成内容。',
-  '你是一个快速的写作助手。请帮助我完成以下任务：
+  'ChatGPT Writing Prompt - Fast',
+  'This is a fast ChatGPT writing prompt to help users quickly generate content.',
+  'You are a fast writing assistant. Please help me complete the following tasks:
 
-任务：
-1. 快速撰写文章
-2. 快速生成大纲
-3. 快速编辑优化
-4. 快速添加图片
+Tasks:
+1. Quickly write article
+2. Quickly generate outline
+3. Quickly edit and optimize
+4. Quickly add images
 
-要求：
-- 速度：快速、高效
-- 质量：优秀、准确
-- 风格：简洁、明了
+Requirements:
+- Speed: fast and efficient
+- Quality: excellent and accurate
+- Format: concise and clear
 
-请开始执行。',
-  'writing', 'Writing Assistant', '["写作", "ChatGPT", "快速", "高效", "简洁"]', '["ChatGPT", "Claude"]', 'beginner',
-  '["快速撰写文章", "快速生成大纲", "快速编辑优化", "快速添加图片"]',
-  'fastWriter', 'https://avatar.url', 10000, false, false, '["写作", "快速", "高效"]',
+Please start executing.',
+  'writing', 'Writing Assistant', ARRAY['writing', 'ChatGPT', 'fast', 'efficient', 'concise']::JSONB, ARRAY['ChatGPT', 'Claude']::JSONB, 'beginner',
+  ARRAY['Quickly write articles', 'Quickly generate outlines', 'Quickly edit and optimize', 'Quickly add images']::JSONB,
+  'fastWriter', null, 10000, false, false, ARRAY['writing', 'fast', 'efficient']::JSONB,
   '2026-01-22 00:00:00', NOW(),
   100, 20, 8, 12, 5,
   20, 15, 12, 20, 3,
   'basic', 10,
   'basic', 72,
-  'basic', 72, 72, 72, 72,
+  'basic',
+  72, 72, 72,
   72, 72,
   'basic',
   72, 72,
-  0, 0, null
+  0, null
   ),
-  
   -- Prompt 8
   (NOW(), NOW(),
-  'ChatGPT编程提示词 - 调试',
-  '这是一个专业的ChatGPT编程提示词，帮助开发者调试代码。',
-  '你是一个专业的调试助手。请帮助我完成以下任务：
+  'ChatGPT Coding Prompt - Debugging',
+  'This is a professional ChatGPT coding prompt to help developers debug code.',
+  'You are a professional debugging assistant. Please help me complete the following tasks:
 
-任务：
-1. 分析错误信息
-2. 提供解决方案
-3. 优化代码性能
-4. 添加日志记录
+Tasks:
+1. Analyze error messages
+2. Provide solutions
+3. Optimize code performance
+4. Add logging
 
-要求：
-- 方法：科学、系统
-- 工具：Python, Node.js, Chrome DevTools
-- 输出：清晰的解决方案
+Requirements:
+- Methods: scientific and systematic
+- Tools: Python, Node.js, Chrome DevTools
+- Output: clear solutions
 
-请开始执行。',
-  'coding', 'Coding Assistant', '["编程", "ChatGPT", "调试", "错误", "日志", "优化"]', '["ChatGPT", "Claude"]', 'advanced',
-  '["分析错误信息", "提供解决方案", "优化代码性能", "添加日志记录"]',
-  'debugExpert', 'https://avatar.url', 15000, false, true, '["编程", "调试", "优化"]',
+Please start executing.',
+  'coding', 'Coding Assistant', ARRAY['coding', 'ChatGPT', 'debug', 'errors', 'logs', 'optimization']::JSONB, ARRAY['ChatGPT', 'Claude']::JSONB, 'advanced',
+  ARRAY['Analyze error messages', 'Provide solutions', 'Optimize code performance', 'Add logging']::JSONB,
+  'debugExpert', null, 15000, false, true, ARRAY['coding', 'debug', 'optimization']::JSONB,
   '2026-01-21 00:00:00', NOW(),
   150, 30, 10, 10, 5,
   25, 21, 16, 21, 5,
   'basic', 16,
   'basic', 77,
-  'basic', 77, 77, 77, 77,
+  'basic',
+  77, 77, 77,
   77, 77,
   'basic',
   77, 77,
-  0, 0, null
+  0, null
   ),
-  
   -- Prompt 9
   (NOW(), NOW(),
-  'ChatGPT营销提示词 - 转化',
-  '这是一个高转化的ChatGPT营销提示词，帮助营销人员提高转化率。',
-  '你是一个专业的转化率优化助手。请帮助我完成以下任务：
+  'ChatGPT Marketing Prompt - Conversion',
+  'This is a high-conversion ChatGPT marketing prompt to help marketers improve conversion rates.',
+  'You are a professional conversion rate optimization assistant. Please help me complete the following tasks:
 
-任务：
-1. 撰写高转化文案
-2. 优化落地页
-3. 设计转化漏斗
-4. 添加A/B测试
+Tasks:
+1. Write high-conversion copy
+2. Optimize landing page
+3. Design conversion funnel
+4. Add A/B testing
 
-要求：
-- 策略：数据驱动、科学
-- 风格：专业、有说服力
-- 目标：提高转化率
+Requirements:
+- Strategy: data-driven and scientific
+- Format: professional and persuasive
+- Goal: improve conversion rate
 
-请开始执行。',
-  'marketing', 'Marketing Assistant', '["营销", "ChatGPT", "转化", "A/B测试", "落地页", "文案"]', '["ChatGPT", "Claude"]', 'advanced',
-  '["撰写高转化文案", "优化落地页", "设计转化漏斗", "添加A/B测试"]',
-  'conversionExpert', 'https://avatar.url', 20000, false, false, '["营销", "转化", "优化"]',
+Please start executing.',
+  'marketing', 'Marketing Assistant', ARRAY['marketing', 'ChatGPT', 'conversion', 'A/B testing', 'landing page', 'copy']::JSONB, ARRAY['ChatGPT', 'Claude']::JSONB, 'advanced',
+  ARRAY['Write high-conversion copy', 'Optimize landing page', 'Design conversion funnel', 'Add A/B testing']::JSONB,
+  'conversionExpert', null, 20000, false, false, ARRAY['marketing', 'conversion', 'optimization']::JSONB,
   '2026-01-20 00:00:00', NOW(),
   200, 40, 10, 12, 5,
   23, 19, 17, 21, 4,
   'basic', 17,
   'basic', 79,
-  'basic', 79, 79, 79, 79,
+  'basic',
+  79, 79, 79,
   79, 79,
   'basic',
   79, 79,
-  0, 0, null
+  0, null
   ),
-  
   -- Prompt 10
   (NOW(), NOW(),
-  'ChatGPT设计提示词 - 现代',
-  '这是一个现代的ChatGPT设计提示词，帮助设计师创建现代化的作品。',
-  '你是一个现代的设计助手。请帮助我完成以下任务：
+  'ChatGPT Design Prompt - Modern',
+  'This is a modern ChatGPT design prompt to help designers create modern works.',
+  'You are a modern design assistant. Please help me complete the following tasks:
 
-任务：
-1. 创建现代UI设计
-2. 选择现代配色方案
-3. 应用现代设计原则
-4. 添加现代视觉效果
+Tasks:
+1. Create modern UI design
+2. Select modern color scheme
+3. Apply modern design principles
+4. Add modern visual effects
 
-要求：
-- 风格：现代、简洁、优雅
-- 配色：现代、协调、鲜艳
-- 原则：响应式、模块化
+Requirements:
+- Style: modern, concise, elegant
+- Colors: modern, coordinated, vibrant
+- Principles: responsive and modular
 
-请开始执行。',
-  'design', 'Design Assistant', '["设计", "ChatGPT", "现代", "响应式", "模块化", "简洁"]', '["ChatGPT", "Claude", "Midjourney"]', 'intermediate',
-  '["创建现代UI设计", "选择现代配色方案", "应用现代设计原则", "添加现代视觉效果"]',
-  'modernDesigner', 'https://avatar.url', 18000, false, false, '["设计", "现代", "响应式"]',
+Please start executing.',
+  'design', 'Design Assistant', ARRAY['design', 'ChatGPT', 'modern', 'responsive', 'modular', 'concise']::JSONB, ARRAY['ChatGPT', 'Claude', 'Midjourney']::JSONB, 'intermediate',
+  ARRAY['Create modern UI design', 'Select modern color scheme', 'Apply modern design principles', 'Add modern visual effects']::JSONB,
+  'modernDesigner', null, 18000, false, false, ARRAY['design', 'modern', 'responsive']::JSONB,
   '2026-01-19 00:00:00', NOW(),
   180, 36, 10, 10, 5,
   22, 20, 16, 21, 4,
   'basic', 18,
   'basic', 80,
-  'basic', 80, 80, 80, 80,
+  'basic',
+  80, 80, 80,
   80, 80,
   'basic',
   80, 80,
-  0, 0, null
+  0, null
   );
 
--- Step 3: Seed Categories (Third)
-INSERT INTO categories (name, slug, description, icon, color, prompt_count, created_at, updated_at)
-VALUES
-  ('Writing Assistant', 'writing-assistant', 'High-quality writing prompts for ChatGPT and other AI models', '✍️', '#3b82f6', 254, NOW(), NOW()),
-  ('Coding Assistant', 'coding-assistant', 'Expert coding prompts and algorithm explanations', '💻', '#8b5cf6', 186, NOW(), NOW()),
-  ('Marketing Assistant', 'marketing-assistant', 'Marketing and copywriting prompts for businesses', '📢', '#ef4444', 142, NOW(), NOW()),
-  ('Design Assistant', 'design-assistant', 'UI/UX and graphic design prompts', '🎨', '#f97316', 128, NOW(), NOW()),
-  ('Analysis Assistant', 'analysis-assistant', 'Data analysis and visualization prompts', '📊', '#10b981', 98, NOW(), NOW()),
-  ('Other', 'other', 'Miscellaneous AI prompts for various use cases', '📚', '#64748b', 67, NOW(), NOW());
-
--- Step 4: Seed Packages (Fourth)
-INSERT INTO packages (name, slug, description, category, tier, price_single, price_monthly, price_yearly, original_price_single, original_price_monthly, original_price_yearly, prompt_ids, active, created_at, updated_at)
-VALUES
-  ('Starter Pack', 'starter-pack', 'Perfect for beginners getting started with AI prompts', 'Other', 'basic', 4.99, 4.99, 49.99, 9.99, 9.99, 99.99, ARRAY[]::BIGINT[], true, NOW(), NOW()),
-  ('Pro Pack', 'pro-pack', 'All to pro prompts you need for professional work', 'Other', 'pro', 14.99, 19.99, 199.99, 29.99, 39.99, 399.99, ARRAY[]::BIGINT[], true, NOW(), NOW()),
-  ('Premium Pack', 'premium-pack', 'Premium prompts with guaranteed quality', 'Other', 'premium', 49.99, 69.99, 699.99, 99.99, 139.99, 1399.99, ARRAY[]::BIGINT[], true, NOW(), NOW());
-
--- Step 5: Seed Evaluations (Fifth - After Prompts)
--- Note: These refer to the prompts we just inserted (id 1-10)
+-- Seed Evaluations (History) - Using actual user ID
 INSERT INTO evaluations (prompt_id, user_id, algorithm, score, sub_scores, confidence, created_at, updated_at)
-VALUES
-  (1, (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'), 'Original', 92, '{"usefulness": 28, "innovation": 23, "completeness": 18, "popularity": 23, "author_influence": 5}'::jsonb, 95, NOW(), NOW()),
-  (2, (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'), 'Original', 90, '{"usefulness": 27, "innovation": 21, "completeness": 17, "popularity": 25, "author_influence": 4}'::jsonb, 90, NOW(), NOW()),
-  (3, (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'), 'Original', 88, '{"usefulness": 26, "innovation": 20, "completeness": 17, "popularity": 25, "author_influence": 4}'::jsonb, 88, NOW(), NOW()),
-  (4, (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'), 'Original', 85, '{"usefulness": 25, "innovation": 20, "completeness": 16, "popularity": 24, "author_influence": 4}'::jsonb, 85, NOW(), NOW()),
-  (5, (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'), 'Original', 82, '{"usefulness": 24, "innovation": 19, "completeness": 16, "popularity": 23, "author_influence": 4}'::jsonb, 82, NOW(), NOW()),
-  (6, (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'), 'Original', 80, '{"usefulness": 23, "innovation": 18, "completeness": 16, "popularity": 23, "author_influence": 4}'::jsonb, 80, NOW(), NOW()),
-  (7, (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'), 'Original', 78, '{"usefulness": 22, "innovation": 17, "completeness": 16, "popularity': 23, 'author_influence': 4}'::jsonb, 78, NOW(), NOW()),
-  (8, (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'), 'Original', 76, '{"usefulness": 21, 'innovation': 17, 'completeness': 15, 'popularity': 23, 'author_influence': 3}'::jsonb, 76, NOW(), NOW()),
-  (9, (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'), 'Original', 75, '{"usefulness": 20, 'innovation': 17, 'completeness': 15, 'popularity': 23, 'author_influence': 3}'::jsonb, 75, NOW(), NOW()),
-  (10, (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'), 'Original', 73, '{"usefulness": 19, 'innovation": 16, 'completeness': 14, 'popularity': 22, 'author_influence': 3}'::jsonb, 73, NOW(), NOW());
-
--- X Algorithm Evaluations (also referencing prompts 1-10)
-INSERT INTO evaluations (prompt_id, user_id, algorithm, score, sub_scores, confidence, created_at, updated_at)
-VALUES
-  (1, (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'), 'X Algorithm', 94, '{"phoenix_score": 92, "history_relevance": 95, "freshness": 94, "diversity": 92, "confidence": 97}'::jsonb, 98, NOW(), NOW()),
-  (2, (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'), 'X Algorithm', 92, '{"phoenix_score": 90, "history_relevance": 93, "freshness": 94, "diversity": 91, "confidence": 96}'::jsonb, 94, NOW(), NOW()),
-  (3, (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'), 'X Algorithm', 89, '{"phoenix_score": 88, "history_relevance": 89, "freshness": 89, "diversity": 88, "confidence": 90}'::jsonb, 91, NOW(), NOW()),
-  (4, (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'), 'X Algorithm', 87, '{"phoenix_score": 86, "history_relevance": 87, "freshness": 86, "diversity": 85, "confidence": 87}'::jsonb, 87, NOW(), NOW()),
-  (5, (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'), 'X Algorithm', 84, '{"phoenix_score": 84, "history_relevance": 85, 'freshness': 84, "diversity": 83, 'confidence': 85}'::jsonb, 84, NOW(), NOW()),
-  (6, (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'), 'X Algorithm', 82, '{"phoenix_score": 82, "history_relevance": 83, "freshness": 82, 'diversity": 81, "confidence": 83}'::jsonb, 82, NOW(), NOW()),
-  (7, (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'), 'X Algorithm', 80, '{"phoenix_score": 80, "history_relevance": 81, 'freshness': 79, 'diversity': 79, 'confidence': 80}'::jsonb, 79, NOW(), NOW()),
-  (8, (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'), 'X Algorithm', 78, '{"phoenix_score": 78, "history_relevance": 79, 'freshness': 78, 'diversity': 77, 'confidence': 78}'::jsonb, 78, NOW(), NOW()),
-  (9, (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'), 'X Algorithm', 75, '{"phoenix_score": 75, "history_relevance": 76, "freshness": 76, "diversity": 75, "confidence": 76}'::jsonb, 75, NOW(), NOW()),
-  (10, (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'), 'X Algorithm', 72, '{"phoenix_score": 72, 'history_relevance': 73, 'freshness': 72, "diversity": 71, "confidence": 72}'::jsonb, 72, NOW(), NOW());
+SELECT
+  1,
+  (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'),
+  'Original',
+  92,
+  '{"usefulness": 28, "innovation": 23, "completeness": 18, "popularity": 23, "author_influence": 5}'::JSONB,
+  95,
+  NOW(),
+  NOW()
+UNION ALL
+SELECT
+  2,
+  (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'),
+  'Original',
+  90,
+  '{"usefulness": 27, "innovation": 21, "completeness": 17, "popularity": 25, "author_influence": 4}'::JSONB,
+  90,
+  NOW(),
+  NOW()
+UNION ALL
+SELECT
+  3,
+  (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'),
+  'Original',
+  88,
+  '{"usefulness": 26, "innovation": 20, "completeness": 17, "popularity": 25, "author_influence": 4}'::JSONB,
+  88,
+  NOW(),
+  NOW()
+UNION ALL
+SELECT
+  4,
+  (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'),
+  'Original',
+  85,
+  '{"usefulness": 25, "innovation": 20, "completeness": 16, "popularity": 24, "author_influence": 4}'::JSONB,
+  85,
+  NOW(),
+  NOW()
+UNION ALL
+SELECT
+  5,
+  (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'),
+  'Original',
+  82,
+  '{"usefulness": 24, "innovation": 19, "completeness": 16, "popularity": 23, "author_influence": 4}'::JSONB,
+  82,
+  NOW(),
+  NOW()
+UNION ALL
+SELECT
+  6,
+  (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'),
+  'Original',
+  80,
+  '{"usefulness": 23, "innovation": 18, "completeness": 16, "popularity": 23, "author_influence": 4}'::JSONB,
+  80,
+  NOW(),
+  NOW()
+UNION ALL
+SELECT
+  7,
+  (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'),
+  'Original',
+  78,
+  '{"usefulness": 22, "innovation": 17, "completeness": 16, "popularity": 23, "author_influence": 4}'::JSONB,
+  78,
+  NOW(),
+  NOW()
+UNION ALL
+SELECT
+  8,
+  (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'),
+  'Original',
+  76,
+  '{"usefulness": 21, "innovation": 17, "completeness": 15, "popularity": 23, "author_influence": 3}'::JSONB,
+  76,
+  NOW(),
+  NOW()
+UNION ALL
+SELECT
+  9,
+  (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'),
+  'Original',
+  75,
+  '{"usefulness": 20, "innovation": 17, "completeness": 15, "popularity": 22, "author_influence": 3}'::JSONB,
+  75,
+  NOW(),
+  NOW()
+UNION ALL
+SELECT
+  10,
+  (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'),
+  'Original',
+  73,
+  '{"usefulness": 19, "innovation": 16, "completeness": 14, "popularity": 22, "author_influence": 3}'::JSONB,
+  73,
+  NOW(),
+  NOW()
+UNION ALL
+-- X Algorithm Evaluations (referencing prompts 1-10)
+SELECT
+  1,
+  (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'),
+  'X Algorithm',
+  94,
+  '{"phoenix_score": 92, "history_relevance": 95, "freshness": 94, "diversity": 92, "confidence": 97}'::JSONB,
+  98,
+  NOW(),
+  NOW()
+UNION ALL
+SELECT
+  2,
+  (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'),
+  'X Algorithm',
+  92,
+  '{"phoenix_score": 90, "history_relevance": 93, "freshness": 94, "diversity": 91, "confidence": 96}'::JSONB,
+  94,
+  NOW(),
+  NOW()
+UNION ALL
+SELECT
+  3,
+  (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'),
+  'X Algorithm',
+  89,
+  '{"phoenix_score": 88, "history_relevance": 91, "freshness": 89, "diversity": 88, "confidence": 91}'::JSONB,
+  91,
+  NOW(),
+  NOW()
+UNION ALL
+SELECT
+  4,
+  (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'),
+  'X Algorithm',
+  87,
+  '{"phoenix_score": 86, "history_relevance": 88, "freshness": 86, "diversity": 85, "confidence": 87}'::JSONB,
+  87,
+  NOW(),
+  NOW()
+UNION ALL
+SELECT
+  5,
+  (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'),
+  'X Algorithm',
+  85,
+  '{"phoenix_score": 84, "history_relevance": 86, "freshness": 84, "diversity": 83, "confidence": 85}'::JSONB,
+  84,
+  NOW(),
+  NOW()
+UNION ALL
+SELECT
+  6,
+  (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'),
+  'X Algorithm',
+  82,
+  '{"phoenix_score": 82, "history_relevance": 84, "freshness": 83, "diversity": 81, "confidence": 83}'::JSONB,
+  82,
+  NOW(),
+  NOW()
+UNION ALL
+SELECT
+  7,
+  (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'),
+  'X Algorithm',
+  80,
+  '{"phoenix_score": 80, "history_relevance": 82, "freshness": 81, "diversity": 79, "confidence": 80}'::JSONB,
+  79,
+  NOW(),
+  NOW()
+UNION ALL
+SELECT
+  8,
+  (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'),
+  'X Algorithm',
+  78,
+  '{"phoenix_score": 78, "history_relevance": 80, "freshness": 79, "diversity": 77, "confidence": 78}'::JSONB,
+  78,
+  NOW(),
+  NOW()
+UNION ALL
+SELECT
+  9,
+  (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'),
+  'X Algorithm',
+  75,
+  '{"phoenix_score": 75, "history_relevance": 77, "freshness": 76, "diversity": 74, "confidence": 75}'::JSONB,
+  74,
+  NOW(),
+  NOW()
+UNION ALL
+SELECT
+  10,
+  (SELECT id FROM users WHERE email = 'admin@ai-prompt-marketplace.com'),
+  'X Algorithm',
+  72,
+  '{"phoenix_score": 72, "history_relevance": 74, "freshness": 73, "diversity": 71, "confidence": 72}'::JSONB,
+  71,
+  NOW(),
+  NOW();
 
 -- ============================================================
 -- COMMIT
