@@ -46,3 +46,24 @@ Searching for: "AI" OR "prompt" OR "ChatGPT" OR "prompt engineering" OR "AI prom
 Query type: Top
 Max results: 100
 
+[2026-01-30 11:57:21] ==========================================
+[2026-01-30 11:57:21] Starting Twitter search automation
+[2026-01-30 11:57:21] ==========================================
+[2026-01-30 11:57:21] Twitter API key loaded
+[2026-01-30 11:57:21] Searching Twitter for: "AI" OR "prompt" OR "ChatGPT" OR "prompt engineering" OR "AI prompts"
+[2026-01-30 11:57:21] Max results: 50
+[2026-01-30 11:57:21] Using improved search script with language and engagement filtering
+🔍 Twitter Search (Improved)
+==================================================
+Query: "AI" OR "prompt" OR "ChatGPT" OR "prompt engineering" OR "AI prompts"
+Query type: Top
+Max results: 50
+Language filter: en
+Min engagement: likes≥10, retweets≥0, replies≥0
+==================================================
+
+Fetching tweets with query: "AI" OR "prompt" OR "ChatGPT" OR "prompt engineering" OR "AI prompts"
+Warning: Failed to fetch page 1: HTTP 402: {"error":"Unauthorized","message":"Credits is not enough.Please recharge"}
+No tweets found matching your criteria.
+[2026-01-30 11:57:22] Search completed successfully:  tweets found
+[2026-01-30 11:57:22] Generating markdown summary...
