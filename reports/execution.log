@@ -1,0 +1,18 @@
+[2026-01-30 08:35:52] ==========================================
+[2026-01-30 08:35:52] Starting Twitter search automation
+[2026-01-30 08:35:52] ==========================================
+[2026-01-30 08:35:52] Twitter API key loaded
+[2026-01-30 08:35:52] Searching Twitter for: "AI" OR "prompt" OR "ChatGPT" OR "prompt engineering" OR "AI prompts"
+[2026-01-30 08:35:52] Max results: 100
+Searching for: "AI" OR "prompt" OR "ChatGPT" OR "prompt engineering" OR "AI prompts"
+Query type: Top
+Max results: 100
+
+Warning: Failed to fetch page 2: API request failed: 429 Client Error: Too Many Requests for url: https://api.twitterapi.io/twitter/tweet/advanced_search?query=%22AI%22+OR+%22prompt%22+OR+%22ChatGPT%22+OR+%22prompt+engineering%22+OR+%22AI+prompts%22&queryType=Top&cursor=DAACCgACG_3xu4VAJxAKAAMb_fG7hT_Y8AgABAAAAAILAAUAAADoRW1QQzZ3QUFBZlEvZ0dKTjB2R3AvQUFBQUJNYi9lbXJVVmNBbFJ2OWpyNGEyMUVQRy8zY1p2VVd3UmdiL2NPZ2d4YlFUUnY5NUxHL20xQjdHLzFxQ1lMVzRRY2IvYlpucmxiQXVCdjliZ291VzNBU0cvMmFnL1dYQURZYi9jV1RXOVpCVXh2OXJkVURHMUhsRy8xVlVONlhJT29iL2I4OE8xZkJRQnY5a2ZUMjJxR0lHLzJ0bFFaV1lMUWIvVzN1aFpZUnd4djlrRnIxMnpHWEcvMktDdDhYSUlNYi9aS2c0QnJCQXc9PQgABgAAAAAIAAcAAAAADAAICgABG_1VUN6XIOoAAAA
+Fetched 19 tweets.
+/root/clawd/skills/twitter-search-skill/scripts/twitter_search.py:341: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "fetched_at": datetime.utcnow().isoformat() + "Z",
+[2026-01-30 08:35:55] Search completed successfully: 19 tweets found
+[2026-01-30 08:35:55] Generating markdown summary...
+[2026-01-30 08:35:55] Markdown summary generated: /root/clawd/ai-prompt-marketplace/reports/twitter-summary-2026-01-30-0835.md
+[2026-01-30 08:35:55] Committing to git repository...

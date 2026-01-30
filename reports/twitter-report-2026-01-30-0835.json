@@ -1,0 +1,682 @@
+{
+  "query": "\"AI\" OR \"prompt\" OR \"ChatGPT\" OR \"prompt engineering\" OR \"AI prompts\"",
+  "query_type": "Top",
+  "fetched_at": "2026-01-30T00:35:55.444547Z",
+  "total_tweets": 19,
+  "statistics": {
+    "total_tweets": 19,
+    "total_engagement": {
+      "likes": 37425,
+      "retweets": 6282,
+      "replies": 4967,
+      "quotes": 5930,
+      "views": 9325434
+    },
+    "averages": {
+      "likes_per_tweet": 1969.74,
+      "retweets_per_tweet": 330.63,
+      "replies_per_tweet": 261.42
+    },
+    "language_distribution": {
+      "en": 18,
+      "zxx": 1
+    },
+    "top_hashtags": {
+      "AI": 2,
+      "AIPrompts": 1,
+      "JeffSAIPost": 1,
+      "AIEducation": 1,
+      "TeacherTips": 1,
+      "FutureOfLearning": 1,
+      "EdTechTips": 1,
+      "iMe": 1,
+      "NanoBanana": 1,
+      "NanoBananaPro": 1,
+      "Gemini": 1,
+      "iMeA": 1
+    },
+    "top_mentions": {
+      "InfoWorld": 1
+    },
+    "reply_ratio": 0.0,
+    "top_authors_by_followers": [
+      {
+        "username": "Google",
+        "name": "Google",
+        "followers": 31615583,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "OpenAI",
+        "name": "OpenAI",
+        "followers": 4599195,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "GoogleAI",
+        "name": "Google AI",
+        "followers": 2329973,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "HP",
+        "name": "HP",
+        "followers": 1096744,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "CultureCrave",
+        "name": "Culture Crave 🍿",
+        "followers": 791531,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "demishassabis",
+        "name": "Demis Hassabis",
+        "followers": 607971,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "greg_price11",
+        "name": "Greg Price",
+        "followers": 519011,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "DavidLeavitt",
+        "name": "David Leavitt 🎲🎮🧙‍♂️🌈",
+        "followers": 383784,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "jeffsheehan",
+        "name": "Jeff Sheehan Author | Mktg Consultant | Speaker",
+        "followers": 298021,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "iMePlatform",
+        "name": "iMe Smart Platform",
+        "followers": 170996,
+        "verified": true,
+        "tweet_count": 1
+      }
+    ],
+    "most_active_authors": [
+      {
+        "username": "Google",
+        "name": "Google",
+        "followers": 31615583,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "demishassabis",
+        "name": "Demis Hassabis",
+        "followers": 607971,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "mwx_ai",
+        "name": "MWX",
+        "followers": 32702,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "jimgeraghty",
+        "name": "Jim Geraghty",
+        "followers": 120551,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "greg_price11",
+        "name": "Greg Price",
+        "followers": 519011,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "jeffsheehan",
+        "name": "Jeff Sheehan Author | Mktg Consultant | Speaker",
+        "followers": 298021,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "jmattmiller",
+        "name": "Matt Miller 🗑️",
+        "followers": 123920,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "TrueSlazac",
+        "name": "Slazac 🇪🇺 🇺🇦 🇹🇼 🌐",
+        "followers": 51976,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "GoogleAI",
+        "name": "Google AI",
+        "followers": 2329973,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "CultureCrave",
+        "name": "Culture Crave 🍿",
+        "followers": 791531,
+        "verified": true,
+        "tweet_count": 1
+      }
+    ]
+  },
+  "tweets": [
+    {
+      "id": "2016926928478089623",
+      "url": "https://x.com/Google/status/2016926928478089623",
+      "text": "Introducing Project Genie: An experimental research prototype powered by Genie 3, our world model, that lets you prompt an interactive world into existence — and then step inside 🌎",
+      "created_at": "Thu Jan 29 17:30:27 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 243,
+        "replies": 78,
+        "likes": 1728,
+        "quotes": 97,
+        "views": 373741,
+        "bookmarks": 606
+      },
+      "author": {
+        "username": "Google",
+        "name": "Google",
+        "followers": 31615583,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016926928478089623"
+    },
+    {
+      "id": "2016925155277361423",
+      "url": "https://x.com/demishassabis/status/2016925155277361423",
+      "text": "Thrilled to launch Project Genie, an experimental prototype of the world's most advanced world model. Create entire playable worlds to explore in real-time just from a simple text prompt - kind of mindblowing really! Available to Ultra subs in the US for now - have fun exploring! https://t.co/2XDy0V0BW0",
+      "created_at": "Thu Jan 29 17:23:24 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 466,
+        "replies": 232,
+        "likes": 3953,
+        "quotes": 171,
+        "views": 394627,
+        "bookmarks": 1040
+      },
+      "author": {
+        "username": "demishassabis",
+        "name": "Demis Hassabis",
+        "followers": 607971,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016925155277361423"
+    },
+    {
+      "id": "2016889079342698947",
+      "url": "https://x.com/mwx_ai/status/2016889079342698947",
+      "text": "🌍MWX | 1st Decentralized AI Marketplace providing plug &amp; play AI solutions for 400M+ SMEs\n🔹3K+ active SMEs\n🔹1,500+ AI purchases\n🔹Supported by 🇮🇩 Ministry of SMEs &amp; Industry, Google, AWS\nJoin MWX loyalty program with $100k worth of rewards👇\nhttps://t.co/Fn4jSZx92s https://t.co/DlHoSanlcM",
+      "created_at": "Thu Jan 29 15:00:03 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 989,
+        "replies": 416,
+        "likes": 1911,
+        "quotes": 24,
+        "views": 17538,
+        "bookmarks": 474
+      },
+      "author": {
+        "username": "mwx_ai",
+        "name": "MWX",
+        "followers": 32702,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016889079342698947"
+    },
+    {
+      "id": "2016884797214220551",
+      "url": "https://x.com/jimgeraghty/status/2016884797214220551",
+      "text": "How I feel being besieged by AI prompts, automatic AI-based searches, and AI-ification of every app: https://t.co/NCFboWEhdA",
+      "created_at": "Thu Jan 29 14:43:02 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 14,
+        "replies": 7,
+        "likes": 108,
+        "quotes": 1,
+        "views": 2786,
+        "bookmarks": 5
+      },
+      "author": {
+        "username": "jimgeraghty",
+        "name": "Jim Geraghty",
+        "followers": 120551,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016884797214220551"
+    },
+    {
+      "id": "2016983302293344333",
+      "url": "https://x.com/greg_price11/status/2016983302293344333",
+      "text": "I can't think of anything that more sums up this current moment then the fact that the media used an old picture of Renee Good and an AI edited facetune of Alex Pretti in their stories because they decided that they weren't hot enough to have enough of a fiddle on your heartstrings.",
+      "created_at": "Thu Jan 29 21:14:27 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 975,
+        "replies": 134,
+        "likes": 5115,
+        "quotes": 44,
+        "views": 221464,
+        "bookmarks": 506
+      },
+      "author": {
+        "username": "greg_price11",
+        "name": "Greg Price",
+        "followers": 519011,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016983302293344333"
+    },
+    {
+      "id": "2017025130145185941",
+      "url": "https://x.com/jeffsheehan/status/2017025130145185941",
+      "text": "What Is Prompt Engineering? The Art Of AI Orchestration Via @infoworld https://t.co/yMgDYTnGHQ #AI #AIPrompts #JeffSAIPost",
+      "created_at": "Fri Jan 30 00:00:40 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 0,
+        "replies": 0,
+        "likes": 1,
+        "quotes": 0,
+        "views": 26,
+        "bookmarks": 0
+      },
+      "author": {
+        "username": "jeffsheehan",
+        "name": "Jeff Sheehan Author | Mktg Consultant | Speaker",
+        "followers": 298021,
+        "verified": true
+      },
+      "hashtags": [
+        "AI",
+        "AIPrompts",
+        "JeffSAIPost"
+      ],
+      "mentions": [
+        "InfoWorld"
+      ],
+      "is_reply": false,
+      "conversation_id": "2017025130145185941"
+    },
+    {
+      "id": "2017010542888534296",
+      "url": "https://x.com/jmattmiller/status/2017010542888534296",
+      "text": "Remember when we thought we had to be experts to get anything out of ChatGPT? Nowadays, it’s less about \"engineering\" and more about clear communication. The best part? Teaching students how to prompt is actually just teaching them how to communicate better.\n\nJoin my newsletter to learn more: https://t.co/LTyK3XhXfS\n\n#AIEducation #TeacherTips #FutureOfLearning #EdTechTips",
+      "created_at": "Thu Jan 29 23:02:42 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 0,
+        "replies": 0,
+        "likes": 2,
+        "quotes": 0,
+        "views": 221,
+        "bookmarks": 0
+      },
+      "author": {
+        "username": "jmattmiller",
+        "name": "Matt Miller 🗑️",
+        "followers": 123920,
+        "verified": true
+      },
+      "hashtags": [
+        "AIEducation",
+        "TeacherTips",
+        "FutureOfLearning",
+        "EdTechTips"
+      ],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2017010542888534296"
+    },
+    {
+      "id": "2016959063699906740",
+      "url": "https://x.com/TrueSlazac/status/2016959063699906740",
+      "text": "Wow. \n\nJust made my first AI video game with Google’s Genie 3\n\nThe prompt: “French woman has to climb through a word that defies logic, flying objects everywhere”\n\nIs it the end of the gaming industry? https://t.co/X7tG7sECJ9",
+      "created_at": "Thu Jan 29 19:38:08 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 212,
+        "replies": 219,
+        "likes": 5630,
+        "quotes": 46,
+        "views": 964724,
+        "bookmarks": 950
+      },
+      "author": {
+        "username": "TrueSlazac",
+        "name": "Slazac 🇪🇺 🇺🇦 🇹🇼 🌐",
+        "followers": 51976,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016959063699906740"
+    },
+    {
+      "id": "2016929427784122627",
+      "url": "https://x.com/GoogleAI/status/2016929427784122627",
+      "text": "Last August, we previewed Genie 3: a general-purpose world model that turns a single text prompt into a dynamic, interactive environment. Since then, trusted testers have taken it further than we ever imagined — experimenting, exploring, and pioneering entirely new interactive worlds. Now, it’s your turn. \n\nStarting today, we're rolling out access to Project Genie for Google AI Ultra subscribers in the U.S. (18+). We know what you create will be out of this world 🚀",
+      "created_at": "Thu Jan 29 17:40:22 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 93,
+        "replies": 54,
+        "likes": 771,
+        "quotes": 52,
+        "views": 1058834,
+        "bookmarks": 368
+      },
+      "author": {
+        "username": "GoogleAI",
+        "name": "Google AI",
+        "followers": 2329973,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016929427784122627"
+    },
+    {
+      "id": "2016928689431421320",
+      "url": "https://x.com/CultureCrave/status/2016928689431421320",
+      "text": "First trailer for Darren Aranofsky's new AI animated series 'On This Day... 1776' \n\n• Tells short narrative stories about the Revolutionary War\n\n• Uses Gen AI tools, including tech made by Google DeepMind\n\n• Has SAG voice actors https://t.co/Tgyj55FQzh",
+      "created_at": "Thu Jan 29 17:37:26 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 336,
+        "replies": 2406,
+        "likes": 5261,
+        "quotes": 5116,
+        "views": 5271134,
+        "bookmarks": 4032
+      },
+      "author": {
+        "username": "CultureCrave",
+        "name": "Culture Crave 🍿",
+        "followers": 791531,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016928689431421320"
+    },
+    {
+      "id": "2016919987428991107",
+      "url": "https://x.com/TheoMediaAI/status/2016919987428991107",
+      "text": "Google Genie is seriously mind bending. \nThis is a Text To World prompt of a man walking down Hollywood Blvd. I am not only controlling the movement of the man, but also the camera. \n\nThis is the World Model we've been waiting for. \nMore Below! https://t.co/ojQHhpNKDM",
+      "created_at": "Thu Jan 29 17:02:52 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 144,
+        "replies": 123,
+        "likes": 1954,
+        "quotes": 67,
+        "views": 180006,
+        "bookmarks": 887
+      },
+      "author": {
+        "username": "TheoMediaAI",
+        "name": "Theoretically Media",
+        "followers": 10774,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016919987428991107"
+    },
+    {
+      "id": "2017019660206821499",
+      "url": "https://x.com/ManaKulaArt/status/2017019660206821499",
+      "text": "Prompt engineering is the new art direction. Curation is the new creation. Iteration is the new innovation.\n\nThe artists who thrive now aren't fighting AI—they're conducting it like an orchestra. 🎨🤖",
+      "created_at": "Thu Jan 29 23:38:56 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 0,
+        "replies": 0,
+        "likes": 0,
+        "quotes": 0,
+        "views": 3,
+        "bookmarks": 0
+      },
+      "author": {
+        "username": "ManaKulaArt",
+        "name": "Mana Kula",
+        "followers": 52,
+        "verified": false
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2017019660206821499"
+    },
+    {
+      "id": "2016978473546400064",
+      "url": "https://x.com/DavidLeavitt/status/2016978473546400064",
+      "text": "Tom from MySpace has AI and SpaceX in his bio now and I'm so disappointed https://t.co/mfAsV7Ggld",
+      "created_at": "Thu Jan 29 20:55:16 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 4,
+        "replies": 6,
+        "likes": 41,
+        "quotes": 0,
+        "views": 5481,
+        "bookmarks": 1
+      },
+      "author": {
+        "username": "DavidLeavitt",
+        "name": "David Leavitt 🎲🎮🧙‍♂️🌈",
+        "followers": 383784,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016978473546400064"
+    },
+    {
+      "id": "2016862013952041194",
+      "url": "https://x.com/iMePlatform/status/2016862013952041194",
+      "text": "🖼️ New feature: Trending Photo Styles\n\n😍 Pick popular styles with ready-made examples and turn your photo into a creative result in seconds.\n\n🔥 Image generation now runs on Google’s Nano Banana & Nano Banana Pro, offering more detail, realism, and style variety. Miya and the AI Assistant are upgraded to Gemini Flash 3 for smarter, more natural conversations.\n\n✨ Plus, iMe AI has a cleaner, more intuitive design for everyday use.\n#iMe #AI #NanoBanana #NanoBananaPro #Gemini #iMeA",
+      "created_at": "Thu Jan 29 13:12:30 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 1937,
+        "replies": 262,
+        "likes": 1829,
+        "quotes": 1,
+        "views": 22801,
+        "bookmarks": 1
+      },
+      "author": {
+        "username": "iMePlatform",
+        "name": "iMe Smart Platform",
+        "followers": 170996,
+        "verified": true
+      },
+      "hashtags": [
+        "iMe",
+        "AI",
+        "NanoBanana",
+        "NanoBananaPro",
+        "Gemini",
+        "iMeA"
+      ],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016862013952041194"
+    },
+    {
+      "id": "2016959338523611621",
+      "url": "https://x.com/OpenAI/status/2016959338523611621",
+      "text": "https://t.co/fJxV8cVORd https://t.co/71q5YPcMKD",
+      "created_at": "Thu Jan 29 19:39:14 +0000 2026",
+      "lang": "zxx",
+      "metrics": {
+        "retweets": 272,
+        "replies": 427,
+        "likes": 4245,
+        "quotes": 195,
+        "views": 415907,
+        "bookmarks": 973
+      },
+      "author": {
+        "username": "OpenAI",
+        "name": "OpenAI",
+        "followers": 4599195,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016959338523611621"
+    },
+    {
+      "id": "2016985444823482707",
+      "url": "https://x.com/HALBERDSTUDIOS/status/2016985444823482707",
+      "text": "Pixel art not made with AI 🎨 https://t.co/1UEdrORDpA",
+      "created_at": "Thu Jan 29 21:22:58 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 82,
+        "replies": 12,
+        "likes": 458,
+        "quotes": 7,
+        "views": 11759,
+        "bookmarks": 44
+      },
+      "author": {
+        "username": "HALBERDSTUDIOS",
+        "name": "HALBERD STUDIOS - Mariachi Legends",
+        "followers": 30648,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016985444823482707"
+    },
+    {
+      "id": "2016938099683557430",
+      "url": "https://x.com/rjNUFC/status/2016938099683557430",
+      "text": "This AI shite needs to stop man. Wait for Ashley Cole haha. https://t.co/vTxhGGOa35",
+      "created_at": "Thu Jan 29 18:14:50 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 254,
+        "replies": 260,
+        "likes": 4126,
+        "quotes": 98,
+        "views": 375935,
+        "bookmarks": 634
+      },
+      "author": {
+        "username": "rjNUFC",
+        "name": "RJ",
+        "followers": 723,
+        "verified": false
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016938099683557430"
+    },
+    {
+      "id": "2016889198138322962",
+      "url": "https://x.com/veedstudio/status/2016889198138322962",
+      "text": "Amazing AI videos NOW from your phone\n\nWith VEED’s mobile app ⚡️\n\n• Pick any AI actor\n• Create AI scripts\n• Get auto captions &amp; smart zoom\n\nShip ads, product demos, explainers\n\n🚨 FREE 500 Credits for every trial user\n\nRT &amp; comment \"VEED\" for access in DM https://t.co/owl9wAYOcM",
+      "created_at": "Thu Jan 29 15:00:31 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 253,
+        "replies": 328,
+        "likes": 275,
+        "quotes": 11,
+        "views": 7384,
+        "bookmarks": 56
+      },
+      "author": {
+        "username": "veedstudio",
+        "name": "VEED.IO | AI Video Creation",
+        "followers": 18121,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016889198138322962"
+    },
+    {
+      "id": "2016968764554657976",
+      "url": "https://x.com/HP/status/2016968764554657976",
+      "text": "The future of work is lighter, smarter, and faster—HP EliteBoard G1a, the world’s first full AI PC built into a keyboard, turns any USB‑C display into your streamlined workspace with one cable. \n\nMaximized minimalism starts here. https://t.co/9qIxzU4pgt https://t.co/O3mhRjwMwO",
+      "created_at": "Thu Jan 29 20:16:41 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 8,
+        "replies": 3,
+        "likes": 17,
+        "quotes": 0,
+        "views": 1063,
+        "bookmarks": 0
+      },
+      "author": {
+        "username": "HP",
+        "name": "HP",
+        "followers": 1096744,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016968764554657976"
+    }
+  ]
+}
