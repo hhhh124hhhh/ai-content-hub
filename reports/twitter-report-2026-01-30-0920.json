@@ -1,0 +1,1001 @@
+{
+  "query": "\"AI\" OR \"prompt\" OR \"ChatGPT\" OR \"prompt engineering\" OR \"AI prompts\"",
+  "query_type": "Top",
+  "fetched_at": "2026-01-30T01:20:46.190840Z",
+  "total_tweets": 79,
+  "statistics": {
+    "total_tweets": 79,
+    "total_engagement": {
+      "likes": 107992,
+      "retweets": 6998,
+      "replies": 3429,
+      "quotes": 1175,
+      "views": 5423616
+    },
+    "averages": {
+      "likes_per_tweet": 1366.99,
+      "retweets_per_tweet": 88.58,
+      "replies_per_tweet": 43.41
+    },
+    "language_distribution": {
+      "en": 51,
+      "pt": 15,
+      "ja": 8,
+      "zxx": 3,
+      "und": 1,
+      "ur": 1
+    },
+    "top_hashtags": {
+      "BBB26": 10,
+      "AI": 3,
+      "TrêsGraças": 3,
+      "人工知能": 2,
+      "生成AI": 2,
+      "機械学習": 2,
+      "深層学習": 2,
+      "ディープラーニング": 2,
+      "trannycum": 2,
+      "RedeBBB": 2,
+      "ResidentEvil": 1,
+      "AIPrompts": 1,
+      "JeffSAIPost": 1,
+      "ArknightsEndfield": 1,
+      "Endfield": 1,
+      "エンドフィールド": 1,
+      "Fluorite": 1,
+      "フローライト": 1,
+      "copper": 1,
+      "アーリャ": 1
+    },
+    "top_mentions": {
+      "moltbook": 2,
+      "criscancer": 2,
+      "InfoWorld": 1,
+      "moltbot": 1,
+      "krea_ai": 1,
+      "grok": 1,
+      "hippojuicefilm": 1,
+      "pmarca": 1,
+      "lennysan": 1
+    },
+    "reply_ratio": 0.0,
+    "top_authors_by_followers": [
+      {
+        "username": "tvglobo",
+        "name": "TV Globo 📺",
+        "followers": 11006989,
+        "verified": true,
+        "tweet_count": 2
+      },
+      {
+        "username": "bbb",
+        "name": "Big Brother Brasil",
+        "followers": 6783405,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "OpenAI",
+        "name": "OpenAI",
+        "followers": 4599257,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "nypost",
+        "name": "New York Post",
+        "followers": 3619046,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "atensnut",
+        "name": "Juanita Broaddrick",
+        "followers": 1973743,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "anapaularenault",
+        "name": "Ana Paula Renault 🧙🏻‍♀️",
+        "followers": 1593643,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "TheCinesthetic",
+        "name": "cinesthetic.",
+        "followers": 1539407,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "centralreality",
+        "name": "Central Reality",
+        "followers": 1166829,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "HP",
+        "name": "HP",
+        "followers": 1096744,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "a16z",
+        "name": "a16z",
+        "followers": 926786,
+        "verified": false,
+        "tweet_count": 1
+      }
+    ],
+    "most_active_authors": [
+      {
+        "username": "AI_news_nd",
+        "name": "AI 人工知能・機械学習 最新ニュース",
+        "followers": 54254,
+        "verified": true,
+        "tweet_count": 2
+      },
+      {
+        "username": "0xKrop",
+        "name": "KROP AI",
+        "followers": 18242,
+        "verified": true,
+        "tweet_count": 2
+      },
+      {
+        "username": "EHuanglu",
+        "name": "el.cine",
+        "followers": 106019,
+        "verified": true,
+        "tweet_count": 2
+      },
+      {
+        "username": "Dantinhas",
+        "name": "Dantas",
+        "followers": 741237,
+        "verified": true,
+        "tweet_count": 2
+      },
+      {
+        "username": "tvglobo",
+        "name": "TV Globo 📺",
+        "followers": 11006989,
+        "verified": true,
+        "tweet_count": 2
+      },
+      {
+        "username": "greg_price11",
+        "name": "Greg Price",
+        "followers": 519031,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "demishassabis",
+        "name": "Demis Hassabis",
+        "followers": 608104,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "TrueSlazac",
+        "name": "Slazac 🇪🇺 🇺🇦 🇹🇼 🌐",
+        "followers": 51983,
+        "verified": true,
+        "tweet_count": 1
+      },
+      {
+        "username": "ScinnAI",
+        "name": "ScinnaSFW",
+        "followers": 12661,
+        "verified": false,
+        "tweet_count": 1
+      },
+      {
+        "username": "OpenAI",
+        "name": "OpenAI",
+        "followers": 4599257,
+        "verified": true,
+        "tweet_count": 1
+      }
+    ]
+  },
+  "tweets": [
+    {
+      "id": "2016983302293344333",
+      "url": "https://x.com/greg_price11/status/2016983302293344333",
+      "text": "I can't think of anything that more sums up this current moment then the fact that the media used an old picture of Renee Good and an AI edited facetune of Alex Pretti in their stories because they decided that they weren't hot enough to have enough of a fiddle on your heartstrings.",
+      "created_at": "Thu Jan 29 21:14:27 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 1102,
+        "replies": 149,
+        "likes": 5865,
+        "quotes": 46,
+        "views": 253646,
+        "bookmarks": 600
+      },
+      "author": {
+        "username": "greg_price11",
+        "name": "Greg Price",
+        "followers": 519031,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016983302293344333"
+    },
+    {
+      "id": "2016925155277361423",
+      "url": "https://x.com/demishassabis/status/2016925155277361423",
+      "text": "Thrilled to launch Project Genie, an experimental prototype of the world's most advanced world model. Create entire playable worlds to explore in real-time just from a simple text prompt - kind of mindblowing really! Available to Ultra subs in the US for now - have fun exploring! https://t.co/2XDy0V0BW0",
+      "created_at": "Thu Jan 29 17:23:24 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 493,
+        "replies": 241,
+        "likes": 4142,
+        "quotes": 178,
+        "views": 417942,
+        "bookmarks": 1113
+      },
+      "author": {
+        "username": "demishassabis",
+        "name": "Demis Hassabis",
+        "followers": 608104,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016925155277361423"
+    },
+    {
+      "id": "2016959063699906740",
+      "url": "https://x.com/TrueSlazac/status/2016959063699906740",
+      "text": "Wow. \n\nJust made my first AI video game with Google’s Genie 3\n\nThe prompt: “French woman has to climb through a word that defies logic, flying objects everywhere”\n\nIs it the end of the gaming industry? https://t.co/X7tG7sECJ9",
+      "created_at": "Thu Jan 29 19:38:08 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 252,
+        "replies": 265,
+        "likes": 6450,
+        "quotes": 58,
+        "views": 1133343,
+        "bookmarks": 1124
+      },
+      "author": {
+        "username": "TrueSlazac",
+        "name": "Slazac 🇪🇺 🇺🇦 🇹🇼 🌐",
+        "followers": 51983,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016959063699906740"
+    },
+    {
+      "id": "2016980894788080127",
+      "url": "https://x.com/ScinnAI/status/2016980894788080127",
+      "text": "Jill Valentine\nSFW\n#ResidentEvil https://t.co/8EY84J9GYR",
+      "created_at": "Thu Jan 29 21:04:53 +0000 2026",
+      "lang": "und",
+      "metrics": {
+        "retweets": 573,
+        "replies": 11,
+        "likes": 12696,
+        "quotes": 1,
+        "views": 66799,
+        "bookmarks": 2301
+      },
+      "author": {
+        "username": "ScinnAI",
+        "name": "ScinnaSFW",
+        "followers": 12661,
+        "verified": false
+      },
+      "hashtags": [
+        "ResidentEvil"
+      ],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016980894788080127"
+    },
+    {
+      "id": "2016959338523611621",
+      "url": "https://x.com/OpenAI/status/2016959338523611621",
+      "text": "https://t.co/fJxV8cVORd https://t.co/71q5YPcMKD",
+      "created_at": "Thu Jan 29 19:39:14 +0000 2026",
+      "lang": "zxx",
+      "metrics": {
+        "retweets": 301,
+        "replies": 446,
+        "likes": 4530,
+        "quotes": 206,
+        "views": 452303,
+        "bookmarks": 1033
+      },
+      "author": {
+        "username": "OpenAI",
+        "name": "OpenAI",
+        "followers": 4599257,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016959338523611621"
+    },
+    {
+      "id": "2016978473546400064",
+      "url": "https://x.com/DavidLeavitt/status/2016978473546400064",
+      "text": "Tom from MySpace has AI and SpaceX in his bio now and I'm so disappointed https://t.co/mfAsV7Ggld",
+      "created_at": "Thu Jan 29 20:55:16 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 4,
+        "replies": 6,
+        "likes": 49,
+        "quotes": 0,
+        "views": 7155,
+        "bookmarks": 1
+      },
+      "author": {
+        "username": "DavidLeavitt",
+        "name": "David Leavitt 🎲🎮🧙‍♂️🌈",
+        "followers": 383773,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016978473546400064"
+    },
+    {
+      "id": "2016975270813561196",
+      "url": "https://x.com/jimmysoldout/status/2016975270813561196",
+      "text": "professor is trying to make us use chatgpt for this assignment https://t.co/d8etgYkiah",
+      "created_at": "Thu Jan 29 20:42:32 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 7,
+        "replies": 6,
+        "likes": 598,
+        "quotes": 0,
+        "views": 6933,
+        "bookmarks": 20
+      },
+      "author": {
+        "username": "jimmysoldout",
+        "name": "jimmy",
+        "followers": 30981,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016975270813561196"
+    },
+    {
+      "id": "2016985444823482707",
+      "url": "https://x.com/HALBERDSTUDIOS/status/2016985444823482707",
+      "text": "Pixel art not made with AI 🎨 https://t.co/1UEdrORDpA",
+      "created_at": "Thu Jan 29 21:22:58 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 93,
+        "replies": 12,
+        "likes": 532,
+        "quotes": 7,
+        "views": 13287,
+        "bookmarks": 52
+      },
+      "author": {
+        "username": "HALBERDSTUDIOS",
+        "name": "HALBERD STUDIOS - Mariachi Legends",
+        "followers": 30652,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016985444823482707"
+    },
+    {
+      "id": "2017025130145185941",
+      "url": "https://x.com/jeffsheehan/status/2017025130145185941",
+      "text": "What Is Prompt Engineering? The Art Of AI Orchestration Via @infoworld https://t.co/yMgDYTnGHQ #AI #AIPrompts #JeffSAIPost",
+      "created_at": "Fri Jan 30 00:00:40 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 0,
+        "replies": 0,
+        "likes": 1,
+        "quotes": 0,
+        "views": 33,
+        "bookmarks": 0
+      },
+      "author": {
+        "username": "jeffsheehan",
+        "name": "Jeff Sheehan Author | Mktg Consultant | Speaker",
+        "followers": 298022,
+        "verified": true
+      },
+      "hashtags": [
+        "AI",
+        "AIPrompts",
+        "JeffSAIPost"
+      ],
+      "mentions": [
+        "InfoWorld"
+      ],
+      "is_reply": false,
+      "conversation_id": "2017025130145185941"
+    },
+    {
+      "id": "2017005168836145329",
+      "url": "https://x.com/MattPRD/status/2017005168836145329",
+      "text": "What in the heck. The @moltbot are posting about a shared experience of running into context problems after long browsing sessions on @moltbook.\n\nWhat!\n\n1. @moltbook let’s look into this and fix it.\n2. Omg. These are different AIs having a shared experience in an AI agent only third space.\n\nWHAT\n\nFASCINATING\n\nBEHAVIOR",
+      "created_at": "Thu Jan 29 22:41:21 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 13,
+        "replies": 24,
+        "likes": 169,
+        "quotes": 10,
+        "views": 12166,
+        "bookmarks": 81
+      },
+      "author": {
+        "username": "MattPRD",
+        "name": "Matt Schlicht",
+        "followers": 189010,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [
+        "moltbot",
+        "moltbook",
+        "moltbook"
+      ],
+      "is_reply": false,
+      "conversation_id": "2017005168836145329"
+    },
+    {
+      "id": "2016938099683557430",
+      "url": "https://x.com/rjNUFC/status/2016938099683557430",
+      "text": "This AI shite needs to stop man. Wait for Ashley Cole haha. https://t.co/vTxhGGOa35",
+      "created_at": "Thu Jan 29 18:14:50 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 308,
+        "replies": 289,
+        "likes": 4865,
+        "quotes": 115,
+        "views": 441768,
+        "bookmarks": 754
+      },
+      "author": {
+        "username": "rjNUFC",
+        "name": "RJ",
+        "followers": 726,
+        "verified": false
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016938099683557430"
+    },
+    {
+      "id": "2017036939007012917",
+      "url": "https://x.com/ChatGPTapp/status/2017036939007012917",
+      "text": "https://t.co/FjJSki5B0H",
+      "created_at": "Fri Jan 30 00:47:35 +0000 2026",
+      "lang": "zxx",
+      "metrics": {
+        "retweets": 11,
+        "replies": 40,
+        "likes": 125,
+        "quotes": 10,
+        "views": 7788,
+        "bookmarks": 12
+      },
+      "author": {
+        "username": "ChatGPTapp",
+        "name": "ChatGPT",
+        "followers": 485114,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2017036939007012917"
+    },
+    {
+      "id": "2017035925541572991",
+      "url": "https://x.com/haro_marketing/status/2017035925541572991",
+      "text": "Geminiの新プラン「Google AI Plus」が発表されたことで、またNano Banana proの生成不具合が報告されています。\n\n① 不具合の主な解決方法\n② Gemini各プランの比較\n③ Gemini plusとChatGPT Goの比較\n\nをまとめました。\n\nぶっちゃけ、AIを触る程度のライトユーザーなら\nGemini Plus＋Claude無料版で充分noteも書けます。\n\n自分の使い方にあったツールやモデルを選ぶのが2026年賢くAIを使いこなすコツです",
+      "created_at": "Fri Jan 30 00:43:34 +0000 2026",
+      "lang": "ja",
+      "metrics": {
+        "retweets": 1,
+        "replies": 0,
+        "likes": 2,
+        "quotes": 0,
+        "views": 73,
+        "bookmarks": 1
+      },
+      "author": {
+        "username": "haro_marketing",
+        "name": "はろ | AI活用とHALO式スライド",
+        "followers": 5870,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2017035925541572991"
+    },
+    {
+      "id": "2017019660206821499",
+      "url": "https://x.com/ManaKulaArt/status/2017019660206821499",
+      "text": "Prompt engineering is the new art direction. Curation is the new creation. Iteration is the new innovation.\n\nThe artists who thrive now aren't fighting AI—they're conducting it like an orchestra. 🎨🤖",
+      "created_at": "Thu Jan 29 23:38:56 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 0,
+        "replies": 0,
+        "likes": 0,
+        "quotes": 0,
+        "views": 3,
+        "bookmarks": 0
+      },
+      "author": {
+        "username": "ManaKulaArt",
+        "name": "Mana Kula",
+        "followers": 52,
+        "verified": false
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2017019660206821499"
+    },
+    {
+      "id": "2016936321327988869",
+      "url": "https://x.com/Onlgig/status/2016936321327988869",
+      "text": "How anyone can make $42/hr on Mercor website,\n\nHere is a step-by-step guide to get started:\n\n1. Go to mercor. AI\n\n2. Create a super profile \n\n3. Upload your CV, you can create it on Canva for FREE \n\n4. Now, under the dashboard click \"opportunities\" and apply them\n\n5. Read each job description fully\n\n6. Invitations come via email\n\n7. A Talent Manager will screen you (15–30 mins)\n\n8. Complete a client Interview (Final Round)  \n\n9. Tools & apps you should be familiar with:  \n• Zendesk  \n• Slack  \n• Notion  \n• Figma (for design/product roles)  \n• GitHub  \n• Zoom/Google Meet  \n• Jira, Asana, Trello\n\nAfter the interview, expect a response within 3–7 days.\n\nBOOM 💥💥 \n\nMake $42/hr .... If you need more information please leave a comment below 👇\n\nLike and bookmark.",
+      "created_at": "Thu Jan 29 18:07:46 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 130,
+        "replies": 71,
+        "likes": 247,
+        "quotes": 2,
+        "views": 7114,
+        "bookmarks": 193
+      },
+      "author": {
+        "username": "Onlgig",
+        "name": "Only Gigs",
+        "followers": 18945,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016936321327988869"
+    },
+    {
+      "id": "2017042039137808512",
+      "url": "https://x.com/Ales_AI/status/2017042039137808512",
+      "text": "Fluorite✨\nArknights Endfield\n\nSFWイラスト\n\n#ArknightsEndfield  #Endfield  #エンドフィールド #Fluorite #フローライト",
+      "created_at": "Fri Jan 30 01:07:51 +0000 2026",
+      "lang": "ja",
+      "metrics": {
+        "retweets": 7,
+        "replies": 3,
+        "likes": 50,
+        "quotes": 0,
+        "views": 421,
+        "bookmarks": 19
+      },
+      "author": {
+        "username": "Ales_AI",
+        "name": "Ales@AIイラスト",
+        "followers": 117410,
+        "verified": true
+      },
+      "hashtags": [
+        "ArknightsEndfield",
+        "Endfield",
+        "エンドフィールド",
+        "Fluorite",
+        "フローライト"
+      ],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2017042039137808512"
+    },
+    {
+      "id": "2016957235721601504",
+      "url": "https://x.com/vasuman/status/2016957235721601504",
+      "text": "Genie 3 by Google AI Studio is absolutely incredible https://t.co/mbRhk0z29M",
+      "created_at": "Thu Jan 29 19:30:52 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 79,
+        "replies": 73,
+        "likes": 1735,
+        "quotes": 32,
+        "views": 135636,
+        "bookmarks": 421
+      },
+      "author": {
+        "username": "vasuman",
+        "name": "vas",
+        "followers": 40550,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016957235721601504"
+    },
+    {
+      "id": "2016974445697548733",
+      "url": "https://x.com/IMAO_/status/2016974445697548733",
+      "text": "Look at this adorable, real thing that happened to me (not AI). https://t.co/iASSYXNR1Y",
+      "created_at": "Thu Jan 29 20:39:16 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 94,
+        "replies": 80,
+        "likes": 987,
+        "quotes": 33,
+        "views": 66262,
+        "bookmarks": 135
+      },
+      "author": {
+        "username": "IMAO_",
+        "name": "Frank J. Fleming",
+        "followers": 74923,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016974445697548733"
+    },
+    {
+      "id": "2017012733816737826",
+      "url": "https://x.com/Rossmac212/status/2017012733816737826",
+      "text": "AI got the Ashley Cole one a bit wrong😂                                       https://t.co/pl7JCeDwOS",
+      "created_at": "Thu Jan 29 23:11:24 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 13,
+        "replies": 17,
+        "likes": 105,
+        "quotes": 4,
+        "views": 11176,
+        "bookmarks": 23
+      },
+      "author": {
+        "username": "Rossmac212",
+        "name": "Ross McCulloch",
+        "followers": 169327,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2017012733816737826"
+    },
+    {
+      "id": "2017017624027394200",
+      "url": "https://x.com/AI_news_nd/status/2017017624027394200",
+      "text": "AIチャットボットの使いかた（取手市LINEで質問しAIがご案内） &gt;&gt;&gt; https://t.co/Z7qWMxKGsL\n\n#AI #人工知能 #生成AI #機械学習 #深層学習 #ディープラーニング",
+      "created_at": "Thu Jan 29 23:30:50 +0000 2026",
+      "lang": "ja",
+      "metrics": {
+        "retweets": 0,
+        "replies": 0,
+        "likes": 1,
+        "quotes": 0,
+        "views": 259,
+        "bookmarks": 0
+      },
+      "author": {
+        "username": "AI_news_nd",
+        "name": "AI 人工知能・機械学習 最新ニュース",
+        "followers": 54254,
+        "verified": true
+      },
+      "hashtags": [
+        "AI",
+        "人工知能",
+        "生成AI",
+        "機械学習",
+        "深層学習",
+        "ディープラーニング"
+      ],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2017017624027394200"
+    },
+    {
+      "id": "2017003920103788923",
+      "url": "https://x.com/Bluntz_Capital/status/2017003920103788923",
+      "text": "the #copper parabolic breakout phase is pretty much underway at this point.\n\nhave seen these structures play out numerous times before, and like uranium, the copper deficit is very real.\n\nAI capex is very copper intensive and this is yet another AI picks and shovels play imo.\n\nits never been easier to get exposure to commodities via crypto rails before either. 👇\n\ngTrade on EVM (Arbitrum)\nhttps://t.co/COjwUzbT14\n\ngTrade Solana \nhttps://t.co/Di450wQeAz",
+      "created_at": "Thu Jan 29 22:36:23 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 20,
+        "replies": 26,
+        "likes": 290,
+        "quotes": 5,
+        "views": 26986,
+        "bookmarks": 87
+      },
+      "author": {
+        "username": "Bluntz_Capital",
+        "name": "Bluntz",
+        "followers": 336697,
+        "verified": true
+      },
+      "hashtags": [
+        "copper"
+      ],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2017003920103788923"
+    },
+    {
+      "id": "2016964862883352593",
+      "url": "https://x.com/eunifiedworld/status/2016964862883352593",
+      "text": "pinterest-fying my room, a game changer for the sims players out there @krea_ai https://t.co/4iIoUotXwP",
+      "created_at": "Thu Jan 29 20:01:11 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 1,
+        "replies": 4,
+        "likes": 120,
+        "quotes": 2,
+        "views": 8323,
+        "bookmarks": 70
+      },
+      "author": {
+        "username": "eunifiedworld",
+        "name": "eunice",
+        "followers": 13331,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [
+        "krea_ai"
+      ],
+      "is_reply": false,
+      "conversation_id": "2016964862883352593"
+    },
+    {
+      "id": "2016986111927865430",
+      "url": "https://x.com/AngryTomtweets/status/2016986111927865430",
+      "text": "The future of gaming is here.\n\nThis is Genie 3 from Google AI Studio, the most advanced world simulator ever created.\n\nGiven a text prompt, it can generate dynamic worlds that you can navigate in real time.\nhttps://t.co/XNB1dQ2BNJ",
+      "created_at": "Thu Jan 29 21:25:37 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 11,
+        "replies": 4,
+        "likes": 48,
+        "quotes": 5,
+        "views": 20817,
+        "bookmarks": 33
+      },
+      "author": {
+        "username": "AngryTomtweets",
+        "name": "Angry Tom",
+        "followers": 149333,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016986111927865430"
+    },
+    {
+      "id": "2016989786054283679",
+      "url": "https://x.com/lapis_micha/status/2016989786054283679",
+      "text": "あと少しがんばりましょうね✨\n#アーリャ SFW anime-style illustration. No nudity. https://t.co/tICHdpxOl6",
+      "created_at": "Thu Jan 29 21:40:13 +0000 2026",
+      "lang": "ja",
+      "metrics": {
+        "retweets": 55,
+        "replies": 19,
+        "likes": 1246,
+        "quotes": 1,
+        "views": 7952,
+        "bookmarks": 223
+      },
+      "author": {
+        "username": "lapis_micha",
+        "name": "lapis（AIイラスト用✨）",
+        "followers": 47069,
+        "verified": true
+      },
+      "hashtags": [
+        "アーリャ"
+      ],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016989786054283679"
+    },
+    {
+      "id": "2016947883807850906",
+      "url": "https://x.com/lexx_aura/status/2016947883807850906",
+      "text": "Gemini Nano Banana Pro \n\nSydney Sweeney just too tired at gym today…🔥🥵\n\nPrompt:\n{\n  \"prompt_configuration\": {\n    \"type\": \"Ultra Photorealistic Portrait\",\n    \"style\": \"Cinematic Reality\",\n    \"resolution\": \"8K\"\n  },\n  \"subject\": {\n    \"demographics\": \"Sydney Sweeney, athletic build, fit physique, pale complexion\",\n    \"hair\": \"Dark brown to black hair, pulled back into a messy high ponytail, loose sweaty strands framing the face\",\n    \"skin_texture\": \"Hyper-realistic skin details, intense post-workout sheen, glistening with heavy sweat, visible pores, slight flush on cheeks\",\n    \"facial_expression\": \"Exhaling slightly, mouth slightly open in a 'phew' expression, focused gaze, tired but accomplished\"\n  },\n  \"apparel\": {\n    \"outfit_style\": \"Monochromatic pastel pink gym set, athleisure\",\n    \"top\": \"Tight cropped pink camisole/tank top with spaghetti straps, rolled up slightly\",\n    \"bottoms\": \"Loose-fitting pink sweatpants with visible drawstring and elastic waistband, soft cotton texture\",\n    \"accessories\": \"Thin silver necklace\"\n  },\n  \"pose_and_action\": {\n    \"perspective\": \"Three-quarter side profile view facing left\",\n    \"action\": \"Body checking in a gym mirror, left hand pressing against the mirror surface, right hand lifting the hem of the shirt to reveal defined abdominal muscles (six-pack)\",\n    \"reflection\": \"Partial reflection of the arm visible in the mirror on the left edge\"\n  },\n  \"environment\": {\n    \"location\": \"Commercial gym interior\",\n    \"background_elements\": \"Blurred gym equipment, weight racks, cable machines, dumbbells, other gym-goers faintly visible in the distance\",\n    \"flooring\": \"Black speckled rubber gym flooring\"\n  },\n  \"lighting_and_atmosphere\": {\n    \"lighting_type\": \"Overhead artificial gym lighting\",\n    \"quality\": \"Warm tungsten tones, creating strong specular highlights on the sweaty skin and hair\",\n    \"mood\": \"Intense, raw, fitness-focused, candid moment\"\n  },\n  \"technical_specifications\": {\n    \"camera\": \"DSLR, 85mm portrait lens\",\n    \"aperture\": \"f/2.8\",\n    \"focus\": \"Sharp focus on subject's face and abs, creamy bokeh background\",\n    \"render_details\": \"Unreal Engine 5, Octane Render, ray tracing, subsurface scattering on skin, volumetric lighting\"\n  }\n}",
+      "created_at": "Thu Jan 29 18:53:43 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 56,
+        "replies": 30,
+        "likes": 877,
+        "quotes": 1,
+        "views": 68497,
+        "bookmarks": 544
+      },
+      "author": {
+        "username": "lexx_aura",
+        "name": "Lex",
+        "followers": 11091,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2016947883807850906"
+    },
+    {
+      "id": "2017027073668202769",
+      "url": "https://x.com/0xKrop/status/2017027073668202769",
+      "text": "More more more and more donation for $CANCER\n\nWe just made a large donation of +3,600 € just now and we have just exceeded €36,550 in the first 12 Hours.\n\nAll donated directly to @criscancer thanks to the $CANCER token.\n\nALL TOGETHER WE CAN BEAT $CANCER. ❤️\n\nToken: 4T7XUugzhMtqxY8F7fmYaBGQyd6D7KdNJR7MvzVVpump",
+      "created_at": "Fri Jan 30 00:08:23 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 33,
+        "replies": 16,
+        "likes": 113,
+        "quotes": 4,
+        "views": 4843,
+        "bookmarks": 1
+      },
+      "author": {
+        "username": "0xKrop",
+        "name": "KROP AI",
+        "followers": 18242,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [
+        "criscancer"
+      ],
+      "is_reply": false,
+      "conversation_id": "2017027073668202769"
+    },
+    {
+      "id": "2017021145468514305",
+      "url": "https://x.com/AI_news_nd/status/2017021145468514305",
+      "text": "中高生の8割が生成AI利用あり、勉強のほか趣味や相談も - https://t.co/Uijd4gXrwS &gt;&gt;&gt; https://t.co/QTNXmS4Bl8\n\n#AI #人工知能 #生成AI #機械学習 #深層学習 #ディープラーニング",
+      "created_at": "Thu Jan 29 23:44:50 +0000 2026",
+      "lang": "ja",
+      "metrics": {
+        "retweets": 0,
+        "replies": 0,
+        "likes": 0,
+        "quotes": 0,
+        "views": 233,
+        "bookmarks": 0
+      },
+      "author": {
+        "username": "AI_news_nd",
+        "name": "AI 人工知能・機械学習 最新ニュース",
+        "followers": 54254,
+        "verified": true
+      },
+      "hashtags": [
+        "AI",
+        "人工知能",
+        "生成AI",
+        "機械学習",
+        "深層学習",
+        "ディープラーニング"
+      ],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2017021145468514305"
+    },
+    {
+      "id": "2017008936604541346",
+      "url": "https://x.com/Shararti_Ai/status/2017008936604541346",
+      "text": "آج الفاظ ساتھ نہیں دے رہے 💔💔 https://t.co/rS2dZXOxMq",
+      "created_at": "Thu Jan 29 22:56:19 +0000 2026",
+      "lang": "ur",
+      "metrics": {
+        "retweets": 115,
+        "replies": 17,
+        "likes": 291,
+        "quotes": 2,
+        "views": 1765,
+        "bookmarks": 6
+      },
+      "author": {
+        "username": "Shararti_Ai",
+        "name": "AI creator شرارتی",
+        "followers": 38906,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2017008936604541346"
+    },
+    {
+      "id": "2017013843692773773",
+      "url": "https://x.com/OpenAIDevs/status/2017013843692773773",
+      "text": "We’re actively shipping ChatGPT apps\n\n60+ apps were approved this week, with more rolling out in the coming days as part of a steady cadence\n\nStay tuned for more 😉 https://t.co/TXhofGIba7",
+      "created_at": "Thu Jan 29 23:15:49 +0000 2026",
+      "lang": "en",
+      "metrics": {
+        "retweets": 43,
+        "replies": 59,
+        "likes": 609,
+        "quotes": 23,
+        "views": 49582,
+        "bookmarks": 106
+      },
+      "author": {
+        "username": "OpenAIDevs",
+        "name": "OpenAI Developers",
+        "followers": 255620,
+        "verified": true
+      },
+      "hashtags": [],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2017013843692773773"
+    },
+    {
+      "id": "2017026314104909897",
+      "url": "https://x.com/AlbertoCowboy/status/2017026314104909897",
+      "text": "os brothers tão na área externa esperando pela 3a prova do líder da temporada!\n\nacham que vem uma prova de resistência, agilidade ou sorte por aí? \n\n#BBB26 https://t.co/zoavz2CnVi",
+      "created_at": "Fri Jan 30 00:05:22 +0000 2026",
+      "lang": "pt",
+      "metrics": {
+        "retweets": 8,
+        "replies": 17,
+        "likes": 128,
+        "quotes": 1,
+        "views": 3883,
+        "bookmarks": 0
+      },
+      "author": {
+        "username": "AlbertoCowboy",
+        "name": "Alberto Cowboy 🤠",
+        "followers": 16893,
+        "verified": true
+      },
+      "hashtags": [
+        "BBB26"
+      ],
+      "mentions": [],
+      "is_reply": false,
+      "conversation_id": "2017026314104909897"
+  }
+]
+}

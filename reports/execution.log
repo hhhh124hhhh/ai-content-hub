@@ -16,3 +16,33 @@ Fetched 19 tweets.
 [2026-01-30 08:35:55] Generating markdown summary...
 [2026-01-30 08:35:55] Markdown summary generated: /root/clawd/ai-prompt-marketplace/reports/twitter-summary-2026-01-30-0835.md
 [2026-01-30 08:35:55] Committing to git repository...
+To https://github.com/hhhh124hhhh/ai-content-hub.git
+   4b9e9c3..fc7ab2e  main -> main
+[2026-01-30 08:35:56] Report committed and pushed to repository
+[2026-01-30 08:35:56] Script completed successfully
+[2026-01-30 09:20:08] ==========================================
+[2026-01-30 09:20:08] Starting Twitter search automation
+[2026-01-30 09:20:08] ==========================================
+[2026-01-30 09:20:08] Twitter API key loaded
+[2026-01-30 09:20:08] Searching Twitter for: "AI" OR "prompt" OR "ChatGPT" OR "prompt engineering" OR "AI prompts"
+[2026-01-30 09:20:08] Max results: 100
+Searching for: "AI" OR "prompt" OR "ChatGPT" OR "prompt engineering" OR "AI prompts"
+Query type: Top
+Max results: 100
+
+Warning: Failed to fetch page 5: API request failed: 429 Client Error: Too Many Requests for url: https://api.twitterapi.io/twitter/tweet/advanced_search?query=%22AI%22+OR+%22prompt%22+OR+%22ChatGPT%22+OR+%22prompt+engineering%22+OR+%22AI+prompts%22&queryType=Top&cursor=DAACCgACG_37443AJxAKAAMb_fvjjb9jwAgABAAAAAILAAUAAANoRW1QQzZ3QUFBZlEvZ0dKTjB2R3AvQUFBQUU4Yi9jbUdJVnRSbnh2OTFwczFWNUg4Ry8yM3F5UVdZUHdiL2FQMjRsWUFmQnY5cjRQTkcxSEVHLzNJZDVxV1VkSWIvZmhENWxaQk9Sdjl2SHhRVmdHM0cvM2tzYitiVUhzYi9idVNiTmZCdlJ2OXJjUXpWMUV4Ry8yL1BEdFh3VUFiL2JPQ25KWkJSeHY5cWhBZEZzRUpHLzJ0MVFNYlVlVWIvYmI2R1p0Unp4djk2Mi9VVnNFUkcvM2ZkT21XUWV3Yi9jWXVybHRRVmh2OTZhdFJWd0NWRy8zcXZ2cldzRWtiL2Q1bEVwWVFJaHY5ejVzZGw2RldHLzM1OWEyWHdaY2IvYnpKNU50UUZSdjk5bEpzR3NBMkcvM0lTaThYb1ZVYi9iRzdxcFpCNWh2OXJ1R2NXMUZMRy8yb1U0dFcwSzRiL2NCakpaYXdmQnY5a2xscWxuRUZHLzIyWjY1V3dMZ2IvYnZiUEZjQThSdjk3T282bDFFckcvMzBhTWhhc0RVYi9aMFF6dGN4SlJ2OXE1LzNsekR5Ry8yeTIwQ2JVQkViL2R1QWpKdFJxeHY5NkhSdmw3SHRHLzJYTHdCYlVMa2IvZGVIRVJmQWJCdjkxbUQ0VzFGN0cvM0dEZUliVWU4Yi9lRlVVWmVCc3h2OStRdy8xckNBRy8ycnY4blhNVVliL2F2cmFsY0I0QnY5eFpOYjFrRlRHLzJ0NjBoV29POGIvZHM2QWxZUVVCdjkzc2lRV3dIWUcvMk92aHJiVVE4Yi9mTmczdGFnMEJ2OTZZVlAyOEVERy8yamFnRFh3Wm9iL2NPZ2d4YlFUUnY5NWd1UUdqQUJHLzNPT1h3YVVJUWIvZVpuK2x0UkN4djk5UkNJbDhCRkcvMjM0UHhiVUNBYi9jRnYrSmZSL3h2OXdkR3pGekJkRy8zQzB0RldNZndiL1orM0tCckJQUnY5bW9QMWx3QTJHLzJ0bFFaV1lMUWIvZGVEdHByd3NSdjkyMmsrRnFIcEcvMjhVb21XOFd3Yi9jSG9oQmNnMkJ2OTMyZDhXbUdORy8zemZORWJVWDhiL1pqbDUxYUFoUnY5NHRlcDJ2Q1lHLzNtclNrVzBZNGIvZHJ3OXhvaG9nPT0IAAYAAAAACAAHAAAAAwwACAoAARv9o_biVgB8AAAA
+Fetched 79 tweets.
+/root/clawd/skills/twitter-search-skill/scripts/twitter_search.py:341: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "fetched_at": datetime.utcnow().isoformat() + "Z",
+[2026-01-30 09:20:46] Search completed successfully: 0 tweets found
+[2026-01-30 09:20:46] Generating markdown summary...
+[2026-01-30 09:21:55] ==========================================
+[2026-01-30 09:21:55] Starting Twitter search automation
+[2026-01-30 09:21:55] ==========================================
+[2026-01-30 09:21:55] Twitter API key loaded
+[2026-01-30 09:21:55] Searching Twitter for: "AI" OR "prompt" OR "ChatGPT" OR "prompt engineering" OR "AI prompts"
+[2026-01-30 09:21:55] Max results: 100
+Searching for: "AI" OR "prompt" OR "ChatGPT" OR "prompt engineering" OR "AI prompts"
+Query type: Top
+Max results: 100
+
